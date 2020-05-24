@@ -11,9 +11,9 @@ define('DB_NAME', 'proteam');
 define('APPROOT', dirname(dirname(__FILE__)));
 
 //URL ROOT
-define('URLROOT', 'http://proteam.test/');
+define('URLROOT', 'http://proteam.ymcstore.com/');
 
 // Site Name
-define('SITENAME', 'Miia Beauty');
+define('SITENAME', 'Proteam');
 
 
