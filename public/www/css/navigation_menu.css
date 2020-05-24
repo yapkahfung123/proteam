@@ -1,0 +1,171 @@
+/* Navigation Menu */
+nav{
+  position: fixed;
+  width: 100%;
+  text-align: center;
+  font-size: 72px;
+  height: 70px;
+  background: rgba(0, 0, 0, 0.2);  /*junwen oirgi-background: rgba(0,0,0,0.7)*/
+  color: #fff;
+  font-family: 'Open Sans';
+  z-index: 999999;
+}
+
+.menu-overlay {
+    height: 0;
+    width: 100%;
+    position: fixed;
+    z-index: 99999;
+    top: 0;
+    left: 0;
+    background-color: rgba(176, 163, 119, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+}
+
+.menu-content {
+    position: relative;
+    top: 16%;
+    width: 100%;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.menu-content .menu-divider {
+	width: 8%;
+	border: 1px solid #fff;
+	margin: 20px auto;
+	position: relative;
+	display: block;
+}
+
+.menu-content .btn-social-facebook {
+	border: none;
+	padding: 5px 10px;
+	font-size: 20px;
+	background: transparent;
+	color: #fff;
+}
+
+.menu-content .btn-social-youtube {
+	border: none;
+	padding: 5px;
+	font-size: 20px;
+	background: transparent;
+	color: #fff;
+}
+
+.menu-content .btn-social-facebook:hover,
+.menu-content .btn-social-youtube:hover {
+	font-weight: 600;
+    color: #f1f1f1;
+}
+
+.menu-overlay a {
+    padding: 8px;
+	text-transform: uppercase;
+	text-decoration: none;
+    font-size: 25px;
+	font-weight: 100;
+	letter-spacing: 5px;
+    color: #fff;
+    display: block;
+}
+
+.menu-overlay a:hover,
+.overlay a:focus {
+	font-weight: 800;
+    color: #f1f1f1;
+}
+
+.menu-overlay .go-to-shop {
+	font-size: 20px;
+	text-transform: lowercase;
+	font-weight: none;
+}
+
+.menu-overlay .closebtn-menu {
+    position: absolute;
+    top: 10px;
+    right: 40px;
+    font-size: 60px;
+}
+
+.menu-overlay .closebtn-menu:hover,:focus {
+	background: transparent;
+	border: none;
+}
+
+/*Navbar Brand*/
+.navbar-brand {
+	height: auto;
+	max-height: 60px;
+	line-height: 40px;
+}
+
+.navbar-brand img {
+	width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+/*Media Queries*/
+@media (max-width: 991px) {
+	.navbar-brand {
+		padding-top: 20px;
+		line-height: 45px;
+	}
+}
+
+
+@media screen and (max-height: 450px) {
+  .menu-overlay a {font-size: 20px}
+  .menu-overlay .closebtn-menu {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+/* END Navigation Menu */
+
+/* Navigation Button */
+.btn-menu {
+	border: none;
+	background: transparent;
+	font-weight: 800;
+	font-size: 30px;
+	color: rgba(255, 255, 255, 0.8);
+	padding: 15px 20px;
+	z-index: 99999;
+	position: relative;
+}
+
+
+@media screen and (max-width: 768px) {
+	.menu-overlay a {
+	    font-size: 18px;
+	}
+	.menu-content {
+		top: 10%;
+	}
+	.closebtn-menu {
+		top: 0px !important;
+	}
+	.btn-menu {
+		font-size: 25px;
+		padding: 18px 10px;
+	}
+	
+	.navbar-brand {
+		padding-left: 0;
+	}
+}
+
+@media screen and (max-width: 414px) {
+	.btn-menu {
+		padding: 18px 5px;
+	}
+}
